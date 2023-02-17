@@ -4,5 +4,5 @@
 #  ignore the node_modules folder
 node_modules
 
-#test to see if it can ignore this file
+# test to see if it can ignore this file
 /ignore.js
