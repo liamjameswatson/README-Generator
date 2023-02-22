@@ -53,32 +53,24 @@ const questions = [
     message: "Enter the email used for this project",
     name: "email",
   },
-  {
-    type: "input",
-    message: "Any other info (y or n)",
-    name: "other",
-  },
-  // TODO: loop here        loop? when?
-  // {
-  //   type: "input",
-  //   message: "section title",
-  //   name: "sectionTitle",
-  // },
-  // {
-  //   type: "input",
-  //   message: "section title",
-  //   name: "sectionDescription",
-  // },
 ];
 
 // function to write README file
-// function writeToFile(fileName, data) {}
+
+const writeToFile = (fileName, data) => {
+  fs.writeFile(fileName, data, (error) => {
+    if (error) {
+      console.log(error);
+    }
+    console.log("success");
+  });
+};
 
 // function to initialize program
 const init = () =>
-  inquirer.prompt(questions)
-  .then((answers) => console.log(answers));
-  
+  inquirer
+    .prompt(questions)
+    .then((answers) => writeToFile("Hello.md", `${answers.title}`));
 
 // function call to initialize program
 init();
