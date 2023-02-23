@@ -18,7 +18,7 @@ const questions = [
   {
     type: "input",
     message: "How do you use your app?",
-    name: "useage",
+    name: "usage",
   },
   {
     type: "input",
@@ -28,7 +28,7 @@ const questions = [
   {
     type: "input",
     message: "Credits?",
-    name: "credits",
+    name: "contributing",
   },
   {
     type: "list",
@@ -45,8 +45,13 @@ const questions = [
   },
   {
     type: "input",
-    message: "Enter the website url",
+    message: "Enter your website url",
     name: "websiteUrl",
+  },
+  {
+    type: "input",
+    message: "Enter your github username",
+    name: "githubUsername",
   },
   {
     type: "input",
@@ -56,7 +61,6 @@ const questions = [
 ];
 
 // function to write README file
-
 const writeToFile = (fileName, data) => {
   fs.writeFile(fileName, data, (error) => {
     if (error) {
@@ -71,8 +75,7 @@ const init = () =>
   inquirer
     .prompt(questions)
 
-    .then((answers) => writeToFile("Hello.md", generateMarkdown(answers)));
+    .then((answers) => writeToFile("README.md", generateMarkdown(answers)));
 
 // function call to initialize program
 init();
-
