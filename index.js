@@ -36,8 +36,7 @@ const questions = [
     name: "licence",
     choices: [
       "MIT licence",
-      "Apache License 2.0 (Apache-2.0)",
-      "GNU General Public License (GPL)",
+      "Apache License 2.0",
       "Berkeley Software Distribution License (BSD)",
       "Internet Systems Consortium License (ISC)",
       "N/A",
