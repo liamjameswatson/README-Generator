@@ -32,11 +32,11 @@ const questions = [
   },
   {
     type: "list",
-    message: "What licence are you using?",
-    name: "licence",
+    message: "What license are you using?",
+    name: "license",
     choices: [
-      "MIT licence",
-      "Apache License 2.0",
+      "MIT",
+      "Apache-2.0",
       "Berkeley Software Distribution License (BSD)",
       "Internet Systems Consortium License (ISC)",
       "N/A",
