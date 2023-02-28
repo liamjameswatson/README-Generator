@@ -27,7 +27,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "Credits?",
+    message: "Who was involved in the project?",
     name: "contributing",
   },
   {

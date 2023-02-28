@@ -46,11 +46,12 @@ ${data.usage}
 
 ### License
 
+${data.license} 
 ${badgeLicense}
 
 ### Contributing
 
-${data.credits}
+${data.contributing}
 
 ### Tests
 
