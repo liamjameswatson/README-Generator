@@ -31,6 +31,14 @@ const questions = [
     name: "contributing",
   },
   {
+    type: "tests",
+    message: "What tests are involved in your project?",
+    name: "tests",
+  },
+
+
+
+  {
     type: "list",
     message: "What license are you using?",
     name: "license",
@@ -50,7 +58,7 @@ const questions = [
   {
     type: "input",
     message: "Enter your github username",
-    name: "githubUsername",
+    name: "githubProfile",
   },
   {
     type: "input",

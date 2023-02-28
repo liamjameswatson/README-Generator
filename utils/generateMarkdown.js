@@ -24,8 +24,11 @@ function generateMarkdown(data) {
 
   return `
   # ${data.title}
+
+
   
-  ## ${data.description}
+  ## Description
+  ${data.description}
   
   ## Table of Contents
   
@@ -46,7 +49,7 @@ ${data.usage}
 
 ### License
 
-${data.license} 
+${data.license}  <br>
 ${badgeLicense}
 
 ### Contributing
@@ -55,11 +58,15 @@ ${data.contributing}
 
 ### Tests
 
-${data.websiteUrl}
+${data.tests}
+
+### Website
+
+The website can be found here ${data.websiteUrl}
 
 ### Questions
 
-If you have any questions please contact me on email: [Email](${data.email}) or github[Github](${data.githubProfile})
+If you have any questions please contact me on email: ${data.email} or github: ${data.githubProfile}
 
 `;
 }
