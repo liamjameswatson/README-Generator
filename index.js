@@ -27,17 +27,16 @@ const questions = [
   },
   {
     type: "input",
-    message: "Credits?",
+    message: "Who was involved in the project?",
     name: "contributing",
   },
   {
     type: "list",
-    message: "What licence are you using?",
-    name: "licence",
+    message: "What license are you using?",
+    name: "license",
     choices: [
-      "MIT licence",
-      "Apache License 2.0 (Apache-2.0)",
-      "GNU General Public License (GPL)",
+      "MIT",
+      "Apache-2.0",
       "Berkeley Software Distribution License (BSD)",
       "Internet Systems Consortium License (ISC)",
       "N/A",
