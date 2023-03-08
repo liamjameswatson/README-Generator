@@ -1,8 +1,6 @@
 
   # Readme file generator 
 
-
-  
   ## Description
   A quick and easy way to generate readme files using the command line
   
